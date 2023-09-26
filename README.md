@@ -8,6 +8,17 @@ To analyze the data, we imported the pandas and numpy packages. The data file wa
 ### Usage 
 This code yields a list of sentiment scores that correspond to a tweet in the dataset. These scores were further grouped based on airline to gauge overall consumer sentiment per airline.
 
+## Data Dictionary
+| Column| Description| Potential Reponses|                   
+|-------|------------|-------------------|
+|tweet_id | A unique integer ID used to identify each Tweet. |An integer|
+|airline_sentiment| A descriptor of how the passenger feels towards the airline. | Positive, negative, or neutral| 
+|airline_sentiment_confidence | How certain we are about how the passenger feels towards the airline (airline_sentiment) | A value 0-1 |
+|airline| The name of the airline company the tweet is referring to.|Airline’s name |
+|name| The passenger who is making the tweet about their experience flying with a certain airline.| User’s Twitter handle |
+|text| The contents of the tweet where the passenger shares their opinion about a certain airline. | Contents of the tweet |
+|tweet_created| The timestamp of when a passenger made a tweet about a certain airline. | Date and time the Tweet was made|
+
 ## References 
 “Getting Started with Sentiment Analysis Using Python.” Huggingface.co, huggingface.co/blog/sentiment-analysis-python#2-how-to-use-pre-trained-sentiment-analysis-models-with-python.
 
